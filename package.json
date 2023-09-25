@@ -1,0 +1,91 @@
+{
+  "name": "@ck-oss/eslint-config",
+  "version": "1.0.0",
+  "private": false,
+  "description": "CK OSS ESLint Configuration",
+  "keywords": [
+    "eslint",
+    "typescript",
+    "hono",
+    "cloudflare",
+    "next",
+    "node",
+    "react"
+  ],
+  "homepage": "https://github.com/ck-oss/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ck-oss/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "ckasidis",
+    "url": "https://github.com/ckasidis"
+  },
+  "main": "./node-library.js",
+  "files": [
+    "./hono-cloudflare.js",
+    "./next.js",
+    "./node-library.js",
+    "./react-library.js"
+  ],
+  "scripts": {
+    "commit": "cz",
+    "format:check": "prettier --check \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}\"",
+    "format:write": "prettier --write \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "husky install"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}": [
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "prettier": "@ck-oss/prettier-config",
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "dependencies": {
+    "@vercel/style-guide": "^5.0.1",
+    "eslint-config-turbo": "^1.10.14"
+  },
+  "devDependencies": {
+    "@ck-oss/prettier-config": "^1.0.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@commitlint/cz-commitlint": "^17.7.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/eslint": "^8.44.3",
+    "commitizen": "^4.3.0",
+    "eslint": "^8.50.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^14.0.1",
+    "prettier": "^3.0.3",
+    "semantic-release": "^22.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
