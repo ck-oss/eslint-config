@@ -67,6 +67,7 @@
     ]
   },
   "dependencies": {
+    "@next/eslint-plugin-next": "^13.4.19",
     "@vercel/style-guide": "^5.0.1",
     "eslint-config-turbo": "^1.10.14"
   },
