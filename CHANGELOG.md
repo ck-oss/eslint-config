@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/ck-oss/eslint-config/compare/v2.0.0...v2.0.1) (2023-09-27)
+
+
+### Bug Fixes
+
+* update README.md ([6cb4dd2](https://github.com/ck-oss/eslint-config/commit/6cb4dd2d0c5244dbac42f550f9f3305412be9336))
+
 # [2.0.0](https://github.com/ck-oss/eslint-config/compare/v1.0.1...v2.0.0) (2023-09-27)
 
 
