@@ -10,10 +10,11 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "next/core-web-vitals",
+    "plugin:next-on-pages/recommended",
     "turbo",
     "prettier",
   ],
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "next-on-pages"],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project,

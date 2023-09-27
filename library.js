@@ -9,7 +9,6 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "next/core-web-vitals",
     "turbo",
     "prettier",
   ],
@@ -32,7 +31,6 @@ module.exports = {
         argsIgnorePattern: "^_",
       },
     ],
-    "@next/next/no-html-link-for-pages": "off",
   },
   ignorePatterns: ["node_modules/", "dist/"],
 };

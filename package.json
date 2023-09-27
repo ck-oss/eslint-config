@@ -6,7 +6,6 @@
   "keywords": [
     "eslint",
     "typescript",
-    "hono",
     "cloudflare",
     "next",
     "node",
@@ -22,19 +21,16 @@
     "name": "ckasidis",
     "url": "https://github.com/ckasidis"
   },
-  "main": "./node-library.js",
+  "main": "./library.js",
   "files": [
-    "./hono-cloudflare.js",
+    "./library.js",
     "./next.js",
-    "./node-library.js",
-    "./react-library.js"
+    "./next-on-pages.js"
   ],
   "scripts": {
     "commit": "cz",
     "format:check": "prettier --check \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}\"",
-    "format:write": "prettier --write \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}\"",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "format:fix": "prettier --write \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}\"",
     "prepare": "husky install"
   },
   "commitlint": {
@@ -67,9 +63,12 @@
     ]
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^13.4.19",
-    "@vercel/style-guide": "^5.0.1",
-    "eslint-config-turbo": "^1.10.14"
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint-config-next": "^13.5.3",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-turbo": "^1.10.14",
+    "eslint-plugin-next-on-pages": "^1.6.1"
   },
   "devDependencies": {
     "@ck-oss/prettier-config": "^1.0.2",
