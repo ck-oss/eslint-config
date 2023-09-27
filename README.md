@@ -8,12 +8,12 @@ CK OSS ESLint Configuration
 npm i -D @ck-oss/eslint-config
 ```
 
-## Hono + Cloudflare Workers
+## Library
 
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: "@ck-oss/eslint-config/hono-cloudflare",
+  extends: "@ck-oss/eslint-config/library",
 };
 ```
 
@@ -26,20 +26,11 @@ module.exports = {
 };
 ```
 
-## Node Library
+## Next.js + Cloudflare Pages
 
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: "@ck-oss/eslint-config/node-library",
-};
-```
-
-## React Library
-
-```js
-// .eslintrc.js
-module.exports = {
-  extends: "@ck-oss/eslint-config/react-library",
+  extends: "@ck-oss/eslint-config/next-on-pages",
 };
 ```

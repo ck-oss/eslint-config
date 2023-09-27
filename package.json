@@ -71,7 +71,7 @@
     "eslint-plugin-next-on-pages": "^1.6.1"
   },
   "devDependencies": {
-    "@ck-oss/prettier-config": "^1.0.2",
+    "@ck-oss/prettier-config": "^1.0.3",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "@commitlint/cz-commitlint": "^17.7.1",
