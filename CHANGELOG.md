@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/ck-oss/eslint-config/compare/v3.0.0...v3.0.1) (2023-10-01)
+
+
+### Bug Fixes
+
+* include constants in files ([3eaae97](https://github.com/ck-oss/eslint-config/commit/3eaae976c88c1c2612e467839121fd95931cd720))
+
 # [3.0.0](https://github.com/ck-oss/eslint-config/compare/v2.0.1...v3.0.0) (2023-10-01)
 
 
