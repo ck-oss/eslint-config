@@ -24,6 +24,7 @@
   "main": "./base.js",
   "files": [
     "./base.js",
+    "./constants.js",
     "./next-on-pages.js",
     "./next.js",
     "./node.js",
