@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/ck-oss/eslint-config/compare/v2.0.1...v3.0.0) (2023-10-01)
+
+
+### Features
+
+* 3.0 release ([c6f5ff7](https://github.com/ck-oss/eslint-config/commit/c6f5ff7b05fde4942088087cbef6d03ec45fc87c))
+
+
+### BREAKING CHANGES
+
+* library config has been removed
+
 ## [2.0.1](https://github.com/ck-oss/eslint-config/compare/v2.0.0...v2.0.1) (2023-09-27)
 
 
