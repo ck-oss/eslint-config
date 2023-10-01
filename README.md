@@ -5,15 +5,24 @@ CK OSS ESLint Configuration
 ## Installation
 
 ```
-npm i -D @ck-oss/eslint-config
+npm i --save-dev @ck-oss/eslint-config
 ```
 
-## Library
+## Base
 
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: "@ck-oss/eslint-config/library",
+  extends: "@ck-oss/eslint-config",
+};
+```
+
+## Next.js + Cloudflare Pages
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: "@ck-oss/eslint-config/next-on-pages",
 };
 ```
 
@@ -26,11 +35,20 @@ module.exports = {
 };
 ```
 
-## Next.js + Cloudflare Pages
+## Node.js
 
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: "@ck-oss/eslint-config/next-on-pages",
+  extends: "@ck-oss/eslint-config/node",
+};
+```
+
+## React.js
+
+```js
+// .eslintrc.js
+module.exports = {
+  extends: "@ck-oss/eslint-config/react",
 };
 ```

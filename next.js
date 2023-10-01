@@ -1,38 +1,38 @@
-const { resolve } = require("node:path");
-
-const project = resolve(process.cwd(), "tsconfig.json");
+const { JAVASCRIPT_FILES } = require("./constants");
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
-  root: true,
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "next/core-web-vitals",
+    "./base",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/react",
+    "plugin:@next/next/recommended",
     "turbo",
     "prettier",
   ],
-  plugins: ["@typescript-eslint"],
-  parser: "@typescript-eslint/parser",
-  parserOptions: {
-    project,
+  env: {
+    browser: true,
+    node: true,
   },
-  rules: {
-    "@typescript-eslint/consistent-type-imports": [
-      "error",
-      {
-        prefer: "type-imports",
-        fixStyle: "inline-type-imports",
-      },
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        argsIgnorePattern: "^_",
-      },
-    ],
-    "@next/next/no-html-link-for-pages": "off",
+  globals: {
+    React: true,
+    JSX: true,
   },
-  ignorePatterns: ["node_modules/", "dist/"],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+  overrides: [
+    {
+      files: JAVASCRIPT_FILES,
+      parserOptions: {
+        babelOptions: {
+          presets: ["next/babel"],
+        },
+      },
+    },
+  ],
 };
