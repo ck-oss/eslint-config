@@ -1,6 +1,4 @@
-const { JAVASCRIPT_FILES } = require("./constants");
-
-/** @type {import('eslint').Linter.Config} */
+/** @type { import('eslint').Linter.Config } */
 module.exports = {
   extends: [
     "./base",
@@ -8,14 +6,11 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/react",
-    "plugin:@next/next/recommended",
-    "plugin:next-on-pages/recommended",
     "turbo",
     "prettier",
   ],
   env: {
     browser: true,
-    node: true,
   },
   globals: {
     React: true,
@@ -26,14 +21,4 @@ module.exports = {
       version: "detect",
     },
   },
-  overrides: [
-    {
-      files: JAVASCRIPT_FILES,
-      parserOptions: {
-        babelOptions: {
-          presets: ["next/babel"],
-        },
-      },
-    },
-  ],
 };

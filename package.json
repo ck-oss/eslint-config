@@ -21,16 +21,20 @@
     "name": "ckasidis",
     "url": "https://github.com/ckasidis"
   },
-  "main": "./library.js",
+  "main": "./base.js",
   "files": [
-    "./library.js",
+    "./base.js",
+    "./next-on-pages.js",
     "./next.js",
-    "./next-on-pages.js"
+    "./node.js",
+    "./react.js"
   ],
   "scripts": {
     "commit": "cz",
-    "format:check": "prettier --check \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}\"",
-    "format:fix": "prettier --write \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}\"",
+    "format:check": "prettier --check \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,gql,graphql}\"",
+    "format:fix": "prettier --write \"**/*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,gql,graphql}\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "prepare": "husky install"
   },
   "commitlint": {
@@ -39,7 +43,7 @@
     ]
   },
   "lint-staged": {
-    "*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,toml,gql,graphql}": [
+    "*.{html,css,scss,js,cjs,mjs,jsx,ts,tsx,md,markdown,mdx,json,yml,yaml,gql,graphql}": [
       "prettier --write"
     ]
   },
@@ -49,6 +53,11 @@
     }
   },
   "prettier": "@ck-oss/prettier-config",
+  "eslintConfig": {
+    "extends": [
+      "./node"
+    ]
+  },
   "release": {
     "branches": [
       "main"
@@ -63,27 +72,36 @@
     ]
   },
   "dependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/eslint-parser": "^7.22.15",
+    "@next/eslint-plugin-next": "^13.5.3",
     "@typescript-eslint/eslint-plugin": "^6.7.3",
     "@typescript-eslint/parser": "^6.7.3",
     "eslint-config-next": "^13.5.3",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-turbo": "^1.10.14",
-    "eslint-plugin-next-on-pages": "^1.6.1"
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-next-on-pages": "^1.6.3",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@ck-oss/prettier-config": "^1.0.3",
-    "@commitlint/cli": "^17.7.1",
+    "@ck-oss/prettier-config": "^1.0.4",
+    "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
-    "@commitlint/cz-commitlint": "^17.7.1",
+    "@commitlint/cz-commitlint": "^17.7.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/eslint": "^8.44.3",
     "commitizen": "^4.3.0",
     "eslint": "^8.50.0",
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.3",
-    "semantic-release": "^22.0.1"
+    "semantic-release": "^22.0.5"
   },
   "publishConfig": {
     "access": "public"
