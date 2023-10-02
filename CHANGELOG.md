@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/ck-oss/eslint-config/compare/v3.0.1...v3.0.2) (2023-10-02)
+
+
+### Bug Fixes
+
+* remove eslint-config-turbo ([87295ad](https://github.com/ck-oss/eslint-config/commit/87295ad6b938f5c71b37de6c5c4cef9483372c60))
+
 ## [3.0.1](https://github.com/ck-oss/eslint-config/compare/v3.0.0...v3.0.1) (2023-10-01)
 
 
