@@ -9,7 +9,6 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "plugin:import/react",
     "plugin:@next/next/recommended",
-    "turbo",
     "prettier",
   ],
   env: {

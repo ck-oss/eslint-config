@@ -1,6 +1,6 @@
 /** @type { import('eslint').Linter.Config } */
 module.exports = {
-  extends: ["./base", "turbo", "prettier"],
+  extends: ["./base", "prettier"],
   env: {
     node: true,
   },

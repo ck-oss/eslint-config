@@ -6,7 +6,6 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:import/react",
-    "turbo",
     "prettier",
   ],
   env: {
