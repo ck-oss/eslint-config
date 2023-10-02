@@ -46,7 +46,6 @@ module.exports = {
       files: TYPESCRIPT_FILES,
       extends: [
         "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-type-checked",
         "plugin:import/typescript",
       ],
       settings: {
