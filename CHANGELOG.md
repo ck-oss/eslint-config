@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/ck-oss/eslint-config/compare/v3.0.2...v3.0.3) (2023-10-02)
+
+
+### Bug Fixes
+
+* remove recommended-type-checked ([9f93624](https://github.com/ck-oss/eslint-config/commit/9f936245bb86d8f30d9b8301c60d6979456743b6))
+
 ## [3.0.2](https://github.com/ck-oss/eslint-config/compare/v3.0.1...v3.0.2) (2023-10-02)
 
 
