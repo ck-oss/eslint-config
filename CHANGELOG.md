@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/ck-oss/eslint-config/compare/v3.0.3...v3.0.4) (2023-10-11)
+
+
+### Bug Fixes
+
+* **deps:** bump dependencies ([7749263](https://github.com/ck-oss/eslint-config/commit/77492637e74e63c791d408f39917be8680d53024))
+
 ## [3.0.3](https://github.com/ck-oss/eslint-config/compare/v3.0.2...v3.0.3) (2023-10-02)
 
 
