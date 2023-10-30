@@ -1,3 +1,10 @@
+## [3.0.5](https://github.com/ck-oss/eslint-config/compare/v3.0.4...v3.0.5) (2023-10-30)
+
+
+### Bug Fixes
+
+* **deps:** update nextjs monorepo to v14 ([87aefe4](https://github.com/ck-oss/eslint-config/commit/87aefe41d80a4aabbc7678241fbcabf66bdbf3f2))
+
 ## [3.0.4](https://github.com/ck-oss/eslint-config/compare/v3.0.3...v3.0.4) (2023-10-11)
 
 
